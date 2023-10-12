@@ -33,6 +33,8 @@ To deploy this process you will need:
 
 The first thing to do is create the Parseq URL.
 
+the URL used for this example is https://firebasestorage.googleapis.com/v0/b/sd-parseq.appspot.com/o/rendered%2FFU5aOZQ2PXclwylgTbeQiLjX8rM2%2Fdoc-1eff40d2-7610-4fed-a661-5b393fd2fd6c.json?alt=media&token=6e60cb57-9801-4797-8dc5-102f7557839a
+
 Open the web app page https://sd-parseq.web.app/
 
 - FPS = 10
