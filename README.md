@@ -89,7 +89,7 @@ Open the web app page https://sd-parseq.web.app/
 
 ## Deforum
 
-- Start A111/Deforum. Set the model to `Protogen_v2.2`, and the following variables:
+- Start A1111/Deforum. Set the model to `Protogen_v2.2`, and the following variables:
 - **Run**
   - Sampler = Euler a
   - steps = 15  
