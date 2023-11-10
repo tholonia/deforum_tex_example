@@ -47,14 +47,12 @@ To deploy this process you will need:
 - Open **`tex_org.mp4`** in Davinci Resolve Studio. Mask out the background and render the file to **`tex/tex_mask.mp4`**. 
   - Render DANCERS ONLY to **`tex/tex_mask.mp4`**
     - [![Example tex_mask.mp4](https://img.youtube.com/vi/Z1rG5hP39k4/0.jpg)](https://www.youtube.com/watch?v=Z1rG5hP39k4)
-  - Render ALL the channels to **`tex.mp4`**
+  - Render ALL the channels to **`tex/tex.mp4`**
   - - [![Example tex_mask.mp4](https://img.youtube.com/vi/WhAY2y2vJrs/0.jpg)](https://www.youtube.com/watch?v=WhAY2y2vJrs)
   - To test the timeline and to identify the in/out points (in points of each background image, add the images to the video tracks and adjust accordingly.  Render this video to visually test.  In this timeline, only the out-points are recorded as the in-points are determined by the length of each clip in Parseq.  If the clips were of different length, both in-points and out-points would need to be reflected in the timeline.
   - Example of Davinci Resolve Timeline of dancers and backgrounds.
   - ![timeline.jpg](/home/jw/src/sdc/settings/tex/timeline.jpg)
-  - Example of Davinci Output of test layout with masked dancers and backgrounds.
-  - [![Example tex_mask.mp4](https://img.youtube.com/vi/hWxd2VV1r4U/0.jpg)](https://www.youtube.com/watch?v=hWxd2VV1r4U)
-  - Render BACKGROUND IMAGES ONLY to **`tex-background.mp4`**, which are all the background clips without the dancer clip.
+  - Render BACKGROUND IMAGES ONLY to **`tex/tex-background.mp4`**, which are all the background clips without the dancer clip.
   - [![Example tex_mask.mp4](https://img.youtube.com/vi/FbPpefidp4k/0.jpg)](https://www.youtube.com/watch?v=FbPpefidp4k)
   - ***Note: As the fps of this video will get reduced to 10, we can use the prompt fade values (from parseq) to locate the seconds of where each image should begin and end. These timing were previously determioned in teh test video above.  Set the image to/from seconds for each image that corresponds to each prompt fade from/to value. So, image 1 starts at 0s and ends at 9.9s because the `prompt fade from/to` values are 0 and 99.  Image 2 starts at 7s and ends as 18.4s, and so on.  Apply some transition (I use fade-out) for smooth transitions.***
   
