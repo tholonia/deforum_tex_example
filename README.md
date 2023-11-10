@@ -1,3 +1,7 @@
+## Final Video:
+
+[![Example final video](https://img.youtube.com/vi/MvSfY1iaIrI/0.jpg)](https://www.youtube.com/watch?v=MvSfY1iaIrI)
+
 ## Requirements
 
 To deploy this process you will need:
@@ -22,6 +26,8 @@ To deploy this process you will need:
 - Davinci Resolve Studio (not the free version), or another tool that can automatically identify and mask selected objects.
 
 - A video of the subject(s).  In this example, that video is called `tex_org.mp4`and is a video of two people dancing tango. The subject(s) in the video needs to be maskable (i.e., contrasting against background)
+	- Example `tex_org.mp4`
+	- [![Example tex_mask.mp4](https://img.youtube.com/vi/7iTA_Du584Q/0.jpg)](https://www.youtube.com/watch?v=7iTA_Du584Q)
 
 - The following Loras are needed:
 
@@ -57,8 +63,6 @@ Open the web app page https://sd-parseq.web.app/
   - Fade Frames = 30
   - Managed fields = None
 
-~~RE-RENDER and UPLOAD OUTPUT.  You will need to COPY URL when you are configuring the `Init` section of Deforum.~~
-
 **Note: After creating the evenly spaced prompt fades. Write down the `From` and `To` frame numbers.  In this example, there is a total of 507 frames, so the prompts have the `From/To` values of :**
 
 - **Prompt 1: 0/99**
@@ -76,7 +80,9 @@ Open the web app page https://sd-parseq.web.app/
 
 - Create a subfolder called `tex/bgimages`. Put the images to be used as backgrounds (6 images, in this case).  These images should be the same resolution as the video output (1280x720 in this case).
 
-- Open `tex_org.mp4` in Davinci Resolve Studio.  Mask the bodies and and place the background images in a new track.  Render the file to `tex/tex_mask.mp4`.
+- Open `tex_org.mp4` in Davinci Resolve Studio.  Mask the bodies and and place the background images in a new track.  Render the file to `tex/tex_mask.mp4`. 
+  - Example `tex_mask.mp4`
+  - [![Example tex_mask.mp4](https://img.youtube.com/vi/Z1rG5hP39k4/0.jpg)](https://www.youtube.com/watch?v=Z1rG5hP39k4)
   - ***Note: As the fps of this video will get reduced to 10, we can use the prompt fade values (from parseq) to locate the seconds of where each image should begin and end.  Set the image to/from seconds for each image that corresponds to each prompt fade from/to value. So, image 1 starts at 0s and ends at 9.9s because the `prompt fade from/to` values are 0 and 99.  Image 2 starts at 7s and ends as 18.4s, and so on.  Apply some transition (I use fade-out) for smooth transitions.***
 
 - Extract the audio from the video to a separate file
